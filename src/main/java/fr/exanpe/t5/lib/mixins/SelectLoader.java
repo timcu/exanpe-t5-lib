@@ -162,7 +162,7 @@ public class SelectLoader
 
         writer.element("root");
 
-        model.visit(new SelectModelRenderer(writer, getValueEncoder(model.getOptions().get(0).getValue())));
+        model.visit(new SelectModelRenderer(writer, getValueEncoder(model.getOptions().get(0).getValue()), false));
 
         writer.end();
 
