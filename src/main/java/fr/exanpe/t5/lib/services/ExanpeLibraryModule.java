@@ -66,20 +66,24 @@ public class ExanpeLibraryModule
     }
 
     public static void contributeTypeCoercer(@SuppressWarnings("rawtypes")
-    Configuration<CoercionTuple> configuration)
-    {
-        configuration
-                .add(CoercionTuple.create(String.class, SecurePasswordEventTypeEnum.class, StringToEnumCoercion.create(SecurePasswordEventTypeEnum.class)));
-        configuration.add(CoercionTuple.create(String.class, AccordionEventTypeEnum.class, StringToEnumCoercion.create(AccordionEventTypeEnum.class)));
-        configuration.add(CoercionTuple.create(String.class, DialogRenderModeEnum.class, StringToEnumCoercion.create(DialogRenderModeEnum.class)));
-        configuration.add(CoercionTuple.create(String.class, SliderOrientationTypeEnum.class, StringToEnumCoercion.create(SliderOrientationTypeEnum.class)));
-        configuration.add(CoercionTuple.create(String.class, MenuEventTypeEnum.class, StringToEnumCoercion.create(MenuEventTypeEnum.class)));
-        configuration.add(CoercionTuple.create(
-                String.class,
-                PasswordStrengthCheckerTypeEnum.class,
-                StringToEnumCoercion.create(PasswordStrengthCheckerTypeEnum.class)));
-        configuration.add(CoercionTuple.create(String.class, GMapTypeEnum.class, StringToEnumCoercion.create(GMapTypeEnum.class)));
-
+    MappedConfiguration<CoercionTuple.Key, CoercionTuple> configuration)
+    {        
+        @SuppressWarnings("rawtypes")
+        Class[] lstClass = new Class[] {
+            SecurePasswordEventTypeEnum.class, 
+            AccordionEventTypeEnum.class, 
+            DialogRenderModeEnum.class, 
+            SliderOrientationTypeEnum.class, 
+            MenuEventTypeEnum.class, 
+            PasswordStrengthCheckerTypeEnum.class, 
+            GMapTypeEnum.class};
+        
+        for (@SuppressWarnings("rawtypes") Class cls : lstClass) {
+            @SuppressWarnings({ "rawtypes", "unchecked" })
+            CoercionTuple ct = CoercionTuple.create(String.class, cls, StringToEnumCoercion.create(cls));
+            configuration.add(ct.getKey(), ct);
+        }
+        
         // ColorPicker
         Coercion<String, Color> coercionStringColor = new Coercion<String, Color>()
         {
@@ -90,8 +94,8 @@ public class ExanpeLibraryModule
                 return Color.decode("0x" + input);
             }
         };
-
-        configuration.add(new CoercionTuple<String, Color>(String.class, Color.class, coercionStringColor));
+        CoercionTuple<String, Color> ctStringColor = CoercionTuple.create(String.class, Color.class, coercionStringColor);
+        configuration.add(ctStringColor.getKey(), ctStringColor);
 
         Coercion<Color, String> coercionColorString = new Coercion<Color, String>()
         {
@@ -105,8 +109,9 @@ public class ExanpeLibraryModule
                 return rgb;
             }
         };
+        CoercionTuple<Color, String> ctColorString = CoercionTuple.create(Color.class, String.class, coercionColorString);
+        configuration.add(ctColorString.getKey(), ctColorString);
 
-        configuration.add(new CoercionTuple<Color, String>(Color.class, String.class, coercionColorString));
     }
 
     public static void contributeFactoryDefaults(MappedConfiguration<String, String> configuration)
