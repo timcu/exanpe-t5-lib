@@ -18,7 +18,7 @@ package exanpe.t5.lib.demo.pages.comp;
 
 import java.util.Locale;
 
-import org.apache.tapestry5.ioc.Messages;
+import org.apache.tapestry5.commons.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
 
 import fr.exanpe.t5.lib.services.LocaleSessionService;

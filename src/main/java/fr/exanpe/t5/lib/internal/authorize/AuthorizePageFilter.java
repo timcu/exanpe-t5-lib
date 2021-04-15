@@ -27,7 +27,7 @@ import org.apache.tapestry5.services.ComponentRequestFilter;
 import org.apache.tapestry5.services.ComponentRequestHandler;
 import org.apache.tapestry5.services.ComponentSource;
 import org.apache.tapestry5.services.PageRenderRequestParameters;
-import org.apache.tapestry5.services.RequestGlobals;
+import org.apache.tapestry5.http.services.RequestGlobals;
 import org.slf4j.Logger;
 
 import fr.exanpe.t5.lib.annotation.Authorize;

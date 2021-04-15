@@ -19,7 +19,7 @@ package exanpe.t5.lib.demo.pages.comp;
 import org.apache.tapestry5.PersistenceConstants;
 import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
-import org.apache.tapestry5.ioc.Messages;
+import org.apache.tapestry5.commons.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
 
 import fr.exanpe.t5.lib.mixins.RichTextEditor;

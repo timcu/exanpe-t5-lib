@@ -18,7 +18,7 @@ package fr.exanpe.t5.lib.services.impl;
 
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.tapestry5.ioc.annotations.Inject;
-import org.apache.tapestry5.services.RequestGlobals;
+import org.apache.tapestry5.http.services.RequestGlobals;
 
 import fr.exanpe.t5.lib.services.AuthorizeBusinessService;
 

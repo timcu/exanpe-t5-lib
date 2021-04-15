@@ -20,7 +20,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.tapestry5.BindingConstants;
 import org.apache.tapestry5.ComponentEventCallback;
 import org.apache.tapestry5.ComponentResources;
-import org.apache.tapestry5.Link;
+import org.apache.tapestry5.http.Link;
 import org.apache.tapestry5.annotations.AfterRender;
 import org.apache.tapestry5.annotations.BeginRender;
 import org.apache.tapestry5.annotations.Events;

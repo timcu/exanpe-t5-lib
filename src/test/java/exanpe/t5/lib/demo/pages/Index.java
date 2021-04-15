@@ -16,7 +16,7 @@
 
 package exanpe.t5.lib.demo.pages;
 
-import org.apache.tapestry5.Link;
+import org.apache.tapestry5.http.Link;
 import org.apache.tapestry5.annotations.OnEvent;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.services.PageRenderLinkSource;

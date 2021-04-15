@@ -33,7 +33,7 @@ import org.apache.tapestry5.annotations.Import;
 import org.apache.tapestry5.annotations.InjectContainer;
 import org.apache.tapestry5.annotations.Parameter;
 import org.apache.tapestry5.dom.Element;
-import org.apache.tapestry5.ioc.Messages;
+import org.apache.tapestry5.commons.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.json.JSONArray;
 import org.apache.tapestry5.json.JSONObject;

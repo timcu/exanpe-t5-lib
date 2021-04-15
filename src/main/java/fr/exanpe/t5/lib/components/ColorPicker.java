@@ -47,7 +47,7 @@ import fr.exanpe.t5.lib.services.ExanpeLibraryModule;
  * JavaScript : This component is bound to a class Exanpe.ColorPicker.<br/>
  * CSS : This component is bound to a class exanpe-cpk.<br/>
  * 
- * @see ExanpeLibraryModule#contributeTypeCoercer(org.apache.tapestry5.ioc.Configuration)
+ * @see ExanpeLibraryModule#contributeTypeCoercer(org.apache.tapestry5.commons.Configuration)
  * @author jmaupoux
  */
 @Import(stylesheet =

@@ -23,7 +23,7 @@ import org.apache.tapestry5.Asset;
 import org.apache.tapestry5.BindingConstants;
 import org.apache.tapestry5.ComponentEventCallback;
 import org.apache.tapestry5.ComponentResources;
-import org.apache.tapestry5.Link;
+import org.apache.tapestry5.http.Link;
 import org.apache.tapestry5.annotations.AfterRender;
 import org.apache.tapestry5.annotations.Events;
 import org.apache.tapestry5.annotations.Import;

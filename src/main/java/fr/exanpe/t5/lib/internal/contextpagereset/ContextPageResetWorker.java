@@ -30,7 +30,7 @@ import org.apache.tapestry5.plastic.MethodHandle;
 import org.apache.tapestry5.plastic.MethodInvocation;
 import org.apache.tapestry5.plastic.PlasticClass;
 import org.apache.tapestry5.plastic.PlasticMethod;
-import org.apache.tapestry5.services.RequestGlobals;
+import org.apache.tapestry5.http.services.RequestGlobals;
 import org.apache.tapestry5.services.TransformConstants;
 import org.apache.tapestry5.services.transform.ComponentClassTransformWorker2;
 import org.apache.tapestry5.services.transform.TransformationSupport;
