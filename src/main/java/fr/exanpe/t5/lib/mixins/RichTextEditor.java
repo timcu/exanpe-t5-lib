@@ -191,7 +191,7 @@ public class RichTextEditor
             String[] includeList = include.split(",");
             for (int i = 0; i < includeList.length; i++)
             {
-                includeButtons.put(StringUtils.strip(includeList[i]).toLowerCase());
+                includeButtons.add(StringUtils.strip(includeList[i]).toLowerCase());
             }
         }
         data.accumulate("include", includeButtons.toString());
@@ -203,7 +203,7 @@ public class RichTextEditor
             String[] excludeList = exclude.split(",");
             for (int i = 0; i < excludeList.length; i++)
             {
-                excludeButtons.put(StringUtils.strip(excludeList[i]).toLowerCase());
+                excludeButtons.add(StringUtils.strip(excludeList[i]).toLowerCase());
             }
         }
         data.accumulate("exclude", excludeButtons.toString());

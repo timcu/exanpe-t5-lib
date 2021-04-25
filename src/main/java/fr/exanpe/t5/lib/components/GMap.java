@@ -263,7 +263,7 @@ public class GMap implements ClientElement
             marker.accumulate("longitude", m.getLongitude());
             marker.accumulate("title", m.getTitle());
             marker.accumulate("info", m.getInfo());
-            gMapMarkers.put(marker);
+            gMapMarkers.add(marker);
         }
         return gMapMarkers;
     }
@@ -277,7 +277,7 @@ public class GMap implements ClientElement
             point.accumulate("id", m.getId());
             point.accumulate("latitude", m.getLatitude());
             point.accumulate("longitude", m.getLongitude());
-            gMapPolyPoints.put(point);
+            gMapPolyPoints.add(point);
         }
         return gMapPolyPoints;
     }

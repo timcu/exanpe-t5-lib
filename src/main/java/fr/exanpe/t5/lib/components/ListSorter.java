@@ -279,7 +279,7 @@ public class ListSorter<T> implements ClientElement, Serializable
 
         destination.clear();
 
-        for (int i = 0; i < array.length(); i++)
+        for (int i = 0; i < array.size(); i++)
         {
             destination.add(source.get(array.getInt(i)));
         }

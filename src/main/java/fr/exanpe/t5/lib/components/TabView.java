@@ -149,7 +149,7 @@ public class TabView implements ClientElement
         JSONArray jsonTabs = new JSONArray();
         for (TabModel m : model.getTabs())
         {
-            jsonTabs.put(new JSONObject("id", m.getId()));
+            jsonTabs.add(new JSONObject("id", m.getId()));
         }
 
         JSONObject data = new JSONObject();

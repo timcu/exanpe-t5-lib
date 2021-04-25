@@ -161,7 +161,7 @@ public class VerticalMenu implements ClientElement
         JSONArray jsonItems = new JSONArray();
         for (MenuItemModel m : model.getMenuItems())
         {
-            jsonItems.put(new JSONObject("id", m.getId()));
+            jsonItems.add(new JSONObject("id", m.getId()));
         }
 
         JSONObject data = new JSONObject();

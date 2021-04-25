@@ -50,7 +50,7 @@ public class AppModule
     }
 
     @Contribute(ValueEncoderSource.class)
-    public static void provideCountryEncoder(MappedConfiguration<Class, ValueEncoderFactory> configuration, final DataService dataService)
+    public static void provideCountryEncoder(MappedConfiguration<Class<Country>, ValueEncoderFactory<Country>> configuration, final DataService dataService)
     {
         ValueEncoderFactory<Country> factory = new ValueEncoderFactory<Country>()
         {

@@ -22,6 +22,9 @@ import org.apache.tapestry5.beaneditor.NonVisual;
 
 public class User implements Serializable
 {
+
+    private static final long serialVersionUID = 1L;
+
     @NonVisual
     private long id;
 
