@@ -142,7 +142,7 @@
 						<configuration>
 							<rules>
 								<requireJavaVersion>
-									<version>[1.5.0,1.9.0)</version>
+									<version>[1.8.0,12)</version>
 								</requireJavaVersion>
 							</rules>
 							<fail>true</fail>
@@ -365,7 +365,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<tapestry-release-version>5.7.2</tapestry-release-version>
-		<compileSource>1.5</compileSource>
+		<compileSource>11</compileSource>
         <spring-version>3.0.6.RELEASE</spring-version>
 	</properties>
 
